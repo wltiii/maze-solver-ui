@@ -14,20 +14,7 @@ const theme = createMuiTheme({
         // Used to shift a color's luminance by approximately
         // two indexes within its tonal palette.
         // E.g., shift from Red 500 to Red 300 or Red 700.
-        tonalOffset: 0.2,
-    
-        // primary: {
-        //     light: '#76d275',
-        //     main: '#43a047',
-        //     dark: '#00701a',
-        //     contrastText: '#000'
-        // },
-        // secondary: {
-        //     light: '#ff6f60',
-        //     main: '#e53935',
-        //     dark: '#ab000d',
-        //     contrastText: '#000'
-        // }
+        tonalOffset: 0.2
     }
 })
 

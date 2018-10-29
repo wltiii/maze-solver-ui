@@ -1,0 +1,114 @@
+= Interview Exercise - A Breadth First Maze Solver UI
+Bill Turner
+:toc:
+:toc-placement!:
+
+toc::[]
+
+== Summary
+A REACT based UI that calls a maze solver resource.
+
+== Requirements
+. Expose an endpoint to solve a text-based maze (described below)
+. Solve the maze by finding the shortest route from the start to the finish
+. Not use a third party pathfinding library to solve the maze
+. Include all necessary build tasks to run the solution
+. Solve the provided `maze1.txt` (pictured below), `maze2.txt`, and `maze3.txt`
+correctly
+. Solve each maze in under a minute on reasonable hardware
+
+=== Maze definition and samples
+A valid maze may contain the following types of characters:
+
+* `.` represents an open road
+* `#` represents a blocked road
+* `A` represents the starting point
+* `B` represents the destination point
+
+Example input maze:
+```
+##########
+#A...#...#
+#.#.##.#.#
+#.#.##.#.#
+#.#....#B#
+#.#.##.#.#
+#....#...#
+##########
+```
+
+Example simplified visual of the solution, using `@` to represent the correct path.
+The shortest number of steps in this case is 14. An ASCII representation like this
+is not recommended however for the final solution.
+```
+##########
+#A@@.#...#
+#.#@##.#.#
+#.#@##.#.#
+#.#@@@@#B#
+#.#.##@#@#
+#....#@@@#
+##########
+```
+
+
+=== Allowed movements
+Anything outside the bounds of the array should be considered a wall. In addition,
+you may only move in horizontal or vertical directions. Diagonal movements are
+not allowed.
+
+== Goals
+
+I believe that what was wanted was something that not only worked, but also demonstrated:
+
+. Design skills
+. Knowledge of the tools used
+. Knowledge of unit testing
+. Coding practice
+
+In addition, by developing this, I was able to demonstrate other things.
+
+. The ability to come up to speed quickly with technologies of which I have little or
+no knowledge. *_I hadn't used REACT nor Material Design before developing this solution._*
+. The ability to deliver a working solution in the time span typically available for a
+story.
+
+=== Assumptions
+. The maze is rectangular in shape.
+. The maze is comprised of only the valid definition characters (see above)
+. The maze has only one start and one endpoint
+
+Violations of the above return a rejected request response.
+
+=== Technology Stack
+This project was bootstrapped with Create React App 
+(https://github.com/facebook/create-react-app). See package.json for dependency
+details.
+
+In addition, the following were used:
+
+* Node v8.9.4
+* NPM v6.4.1
+
+
+== Getting Started ==
+ . Install the tools above as necessary.
+ . Install git (see https://git-scm.com/).
+ . Clone the project.
+ . Run `npm i` to install the project.
+ . Run `npm start` to launch the project.
+
+Your browser should open to the project page.
+
+== Disclaimer ==
+Not having access to a user nor analyst is not a natural condition. Requirements may not
+ have been understood as intended. I believe I understood them properly and have implemented
+ based upon that assumption.
+
+Also, other design choices may have been made having someone available. And, naturally,
+everyone makes different choices. I would be happy to discuss!
+
+This cannot be considered production ready. I viewed this as a story that would have
+further stories addressing issues such as authorization, as well as implementing the
+other endpoints.
+
