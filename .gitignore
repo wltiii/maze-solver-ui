@@ -15,7 +15,28 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.history/*
+
+# vscode
+config/local*
+*.log
+.vscode/launch.json
+.vscode/settings.json
+
+#idea
+.idea/sync-common.iml
+.idea/misc.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/vcs.xml
+.idea/modules.xml
+.idea/jsLinters/jshint.xml
+.idea/workspace.xml
+.idea/codeStyles/codeStyleConfig.xml
+.idea/jsLinters/eslint.xml
+
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+package-lock.json
